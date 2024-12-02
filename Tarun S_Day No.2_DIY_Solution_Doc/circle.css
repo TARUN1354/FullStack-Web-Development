@@ -1,0 +1,65 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+  }
+  
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+  }
+  
+  .top-left {
+    top: 0;
+    left: 0;
+  }
+  
+  .top-right {
+    top: 0;
+    right: 0;
+  }
+  
+  .bottom-left {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bottom-right {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .top-circle {
+    top: -10px;
+    left: calc(50% - 10px);
+  }
+  
+  .right-circle {
+    top: calc(50% - 10px);
+    right: -10px;
+  }
+  
+  .bottom-circle {
+    bottom: -10px;
+    left: calc(50% - 10px);
+  }
+  
+  .left-circle {
+    top: calc(50% - 10px);
+    left: -10px;
+  }
+  

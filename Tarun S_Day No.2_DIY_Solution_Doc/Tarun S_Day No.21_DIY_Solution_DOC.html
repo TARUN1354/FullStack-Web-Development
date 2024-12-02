@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [1, 2, 3];
+        arr.push(4);
+        console.log(arr)
+        let arr1 = [1, 2, 3,4];
+        arr1.pop(0,2);
+        console.log(arr1);
+        let arr2 = [1,2,3];
+        arr2.shift(0,3);
+        console.log(arr2); 
+        let arr3 = [ 2, 3];
+        arr3.unshift(5);
+        console.log(arr3); 
+        let arr4= [
+            { name: 'Rahul', empId: 3567, mailId: 'mailme@gmail.com', Address: { City : 'Vijayawada', District: 'Krishna district', pin: 526894, }, Hobbies: ['Netflix', 'Tennis', 'Coding'] },
+            { name: 'Ravi', empId: 9867, mailId: 'ravimail@gmail.com', Address: { City : 'Guntur', District: 'Prakasham district', Pin: 685479, }, Hobbies: ['Reading', 'Swimming', 'Baking'] },
+            { name: 'Santosh', empId: 8876, mailId: 'santoshmail@gmail.com', Address: { City : 'Warangal', District: 'Hanamkonda district', Pin: 996587, }, Hobbies: ['Gym', 'Reading Novels'] },
+            { name: 'Surya', empId: 3469, mailId: 'suryamail@gmail.com', Address: { City  : 'Nazamabad', District: 'Nazamabad district', Pin: 648597, }, Hobbies: ['Badminton', 'E-Sports', 'Netflix'] },
+            { name: 'Kiran', empId: 8864, mailId: 'kirammail@gmail.com', Address: { city: 'Karimnagar', district: 'Karimnagar district', pin: 666954, }, Hobbies: ['Badminton', 'E-Sports', 'Netflix'] },
+            { name: 'Kiran', empId: 8864, mailId: 'kirammail@gmail.com', Address: { city: 'Karimnagar', district: 'Karimnagar district', pin: 666954, }, Hobbies: ['Gaming', 'Cooking', 'Music'] },
+        ];
+        arr4.map((element)=>
+        {
+            console.log(element.name);
+            let arr5=[];
+            Object.keys(element.Address).map((item)=>{
+                arr3.push(element.Address[item]);
+            });
+            console.log(arr5);
+            element.Hobbies.forEach((hobby)=>{
+                console.log(hobby)
+            });
+        });
+    </script>
+</body>
+</html>
